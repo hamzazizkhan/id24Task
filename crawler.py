@@ -26,7 +26,7 @@ def search(session, custom_headers, searchQuery):
     
     searchUrl = 'https://exitwatch-api2.h-m-g.se/search'
     searchPayload = {'searchQuery': searchQuery}
-
+    
     searchResp = session.post(searchUrl, searchPayload, headers=custom_headers)
     data = searchResp.json()
     

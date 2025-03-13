@@ -1,3 +1,10 @@
+'''
+for testing run : pytest testing.py -v
+
+for each search request the response status is checked for 200.
+the data is also checked for containing a status field of the right value
+'''
+
 import pytest
 from crawler import login, search
 
